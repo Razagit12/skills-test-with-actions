@@ -1,6 +1,4 @@
 # System Modules
-# System Modules
-# System Modules
 import sys
 import os
 
@@ -37,7 +35,7 @@ def test_area_of_circle_zero_radius():
 
 
 def test_area_of_circle_negative_radius():
-    """Test with a negative radius."""
+    """Test with a negative radius to raise ValueError."""
     # Arrange
     radius = -1
 
@@ -79,11 +77,11 @@ def test_get_nth_fibonacci_ten():
     result = get_nth_fibonacci(n)
 
     # Assert
-    assert result == 89
+    assert result == 55
 
 
-def test_get_nth_fibonacci_negative_n():
-    """Test with negative n."""
+def test_get_nth_fibonacci_negative():
+    """Test with a negative number to raise ValueError."""
     # Arrange
     n = -1
 
